@@ -45,10 +45,12 @@ function multiplyNums(x, y, cb) {
   return cb(x, y);
 }
 
+
+// contains checks if an item is present inside of the given array/list.
+// Pass true to the callback if it is, otherwise pass false.
 function contains(item, list, cb) {
-  // contains checks if an item is present inside of the given array/list.
-  // Pass true to the callback if it is, otherwise pass false.
-  cb(item, list)
+
+  return cb(item, list);
 }
 
 function detector(list, item){
@@ -68,4 +70,5 @@ function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
+
 }
