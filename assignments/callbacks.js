@@ -37,7 +37,7 @@ function last(arr, cb) {
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
-  return cb(x, y)
+  return cb(x, y);
 }
 
 function multiplyNums(x, y, cb) {
@@ -48,14 +48,12 @@ function multiplyNums(x, y, cb) {
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
-  for (let i = 0; i < list.length; i++){
-    cb(item === list[i]);
-  }
+  cb(item, list)
 }
 
 function detector(array, item){
-  for(let i = 0; i < items.length; i++){
-    if(items[i] == item){
+  for(let i = 0; i < array.length; i++){
+    if(array[i].indexOf(item) !== -1){
       return true;
     }
     else {
@@ -63,8 +61,8 @@ function detector(array, item){
     }
   }
 }
-console.log(detector('Notebook'))
-console.log(contains('Notebook', items, detector()))
+console.log(contains('Notebook', items, detector))
+
 
 /* STRETCH PROBLEM */
 
