@@ -51,14 +51,12 @@ function contains(item, list, cb) {
   cb(item, list)
 }
 
-function detector(array, item){
-  for(let i = 0; i < array.length; i++){
-    if(array[i].indexOf(item) !== -1){
-      return true;
-    }
-    else {
-      return false;
-    }
+function detector(list, item){
+  if(list.indexOf(item) !== -1){
+    return true;
+  }
+  else {
+    return false;
   }
 }
 console.log(contains('Notebook', items, detector))
