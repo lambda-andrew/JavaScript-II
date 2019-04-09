@@ -66,9 +66,24 @@ console.log(contains(items, 'bank', detector))
 
 /* STRETCH PROBLEM */
 
+const myArray = ['Coffee', 'Tea', 'Wine', 'Beer', 'Espresso', 'Juice', 'Coffee', 'Wine']
+
 function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
-
+return cb(array);
 }
+
+
+function noDupes(array, item){
+let newArray = [];
+myArray.forEach(function(i){
+  if(!newArray[i]){
+    newArray[i] = true;
+  }
+});
+  return Object.keys(newArray);
+}
+
+console.log(removeDuplicates(myArray, noDupes))
