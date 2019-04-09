@@ -48,9 +48,9 @@ function multiplyNums(x, y, cb) {
 
 // contains checks if an item is present inside of the given array/list.
 // Pass true to the callback if it is, otherwise pass false.
-function contains(item, list, cb) {
+function contains(list, item, cb) {
 
-  return cb(item, list);
+  return cb(list, item);
 }
 
 function detector(list, item){
@@ -61,7 +61,7 @@ function detector(list, item){
     return false;
   }
 }
-console.log(contains('Notebook', items, detector))
+console.log(contains(items, 'bank', detector))
 
 
 /* STRETCH PROBLEM */
