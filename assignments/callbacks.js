@@ -28,7 +28,7 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
 
 function getLength(arr, cb) { //new function get length takes two paramaters (array, callback)
-  return (cb(array)); //return (callback(array))
+  return (cb(arr)); //return (callback(array))
 }
 
 let arrayLength = function(items){ // new function arrayLength takes items array
@@ -41,59 +41,59 @@ getLength(items,arrayLength); //invoke function get length
 /////////////////////
 
 
-function last(arr, cb) {
-  return(cb(array)); //return callback callback (array)
-  // last passes the last item of the array into the callback.
-}
+// function last(arr, cb) {
+//   return(cb(array)); //return callback callback (array)
+//   // last passes the last item of the array into the callback.
+// }
 
-let lastitem = function(items){
-  return items.pop;
-}
+// let lastitem = function(items){
+//   return items.pop;
+// }
 
-last(items,lastitem);
-
-
-
-
-function sumNums(x, y, cb) {
-  return cb(x, y)
-  // sumNums adds two numbers (x, y) and passes the result to the callback.
-}
-
-let add = function(x,y){
-  return x + y;
-}
-
-console.log(sumNums(1,2,add));
-
-
-
-function multiplyNums(x, y, cb) {
-  return cb(x,y)
-  // multiplyNums multiplies two numbers and passes the result to the callback.
-}
-
-let multiple = function(x,y){
-  return x * y;
-}
-
-console.log(multipleNums(3,4,multiply));
+// last(items,lastitem);
 
 
 
 
+// function sumNums(x, y, cb) {
+//   return cb(x, y)
+//   // sumNums adds two numbers (x, y) and passes the result to the callback.
+// }
+
+// let add = function(x,y){
+//   return x + y;
+// }
+
+// console.log(sumNums(1,2,add));
 
 
-function contains(item, list, cb) {
+
+// function multiplyNums(x, y, cb) {
+//   return cb(x,y)
+//   // multiplyNums multiplies two numbers and passes the result to the callback.
+// }
+
+// let multiple = function(x,y){
+//   return x * y;
+// }
+
+// console.log(multipleNums(3,4,multiply));
+
+
+
+
+
+
+// function contains(item, list, cb) {
   
-  // contains checks if an item is present inside of the given array/list.
-  // Pass true to the callback if it is, otherwise pass false.
-}
+//   // contains checks if an item is present inside of the given array/list.
+//   // Pass true to the callback if it is, otherwise pass false.
+// }
 
-/* STRETCH PROBLEM */
+// /* STRETCH PROBLEM */
 
-function removeDuplicates(array, cb) {
-  // removeDuplicates removes all duplicate values from the given array.
-  // Pass the duplicate free array to the callback function.
-  // Do not mutate the original array.
-}
+// function removeDuplicates(array, cb) {
+//   // removeDuplicates removes all duplicate values from the given array.
+//   // Pass the duplicate free array to the callback function.
+//   // Do not mutate the original array.
+// }
